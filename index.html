@@ -9,13 +9,11 @@
 <body>
     <h1>行船入三潭</h1>
     <ul>
-        <li><a href="_posts/2024-02-23-001.md">我的第一篇文章</a></li>
-    </ul>
-    <ul>
-        <li><a href="/2024/02/23/001.html">我的第一篇文章</a></li>
-    </ul>
-    <ul>
-        <li><a href="_posts/2024/02/23/001.md">我的第一篇文章</a></li>
+      {% for post in site.posts %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
     </ul>
 </body>
 </html>
