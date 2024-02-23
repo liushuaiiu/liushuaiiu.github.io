@@ -2,6 +2,11 @@ body {
     font-family: 'Noto Sans SC', sans-serif;
 }
 
+header img {
+    width: 100%; /* 图片宽度占满整个header */
+    height: auto; /* 高度自动调整以保持图片比例 */
+}
+
 /* 去掉ul列表前的小圆点 */
 ul {
     list-style-type: none;
