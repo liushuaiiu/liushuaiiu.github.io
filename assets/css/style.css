@@ -1,3 +1,6 @@
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+}
 
 /* 去掉ul列表前的小圆点 */
 ul {
