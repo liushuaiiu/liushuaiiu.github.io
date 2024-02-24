@@ -1,6 +1,7 @@
 body {
     font-family: 'Noto Sans SC', sans-serif;
     font-size: 16px; /* 默认字体大小 */
+    margin-left: 10px; /* 较小屏幕的默认左边距 */
 }
 
 @media (min-width: 768px) {
@@ -12,6 +13,7 @@ body {
 @media (min-width: 1200px) {
     body {
         font-size: 18px; /* 在非常大的屏幕上设置一个最大字体大小 */
+        margin-left: 20px; /* 在较大屏幕上增加左边距 */
     }
 }
 
