@@ -22,6 +22,16 @@ p {
     line-height: 1.6; /* 设置行高，提高可读性 */
 }
 
+.back-to-home {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
 /* 去掉ul列表前的小圆点 */
 ul {
     list-style-type: none;
