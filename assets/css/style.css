@@ -37,6 +37,18 @@ p {
     border-bottom-color: #888; /* 鼠标悬停或聚焦时横线颜色变深 */
 }
 
+.post-link {
+    text-decoration: none; /* 去除链接下划线 */
+    color: #333; /* 设置链接文字颜色 */
+    /* 其他想要的样式 */
+}
+
+.post-date {
+    margin-left: 10px; /* 在标题和日期之间添加一定的间距 */
+    color: #777; /* 如果需要，为日期设置不同的颜色 */
+    /* 其他想要的样式 */
+}
+
 /* 去掉ul列表前的小圆点 */
 ul {
     list-style-type: none;
