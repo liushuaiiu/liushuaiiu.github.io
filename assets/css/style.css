@@ -1,44 +1,10 @@
 body {
-    font-family: 'Noto Sans SC', sans-serif;
-    /* 最小值：12px, 理想值：2vw, 最大值：22px */
-    font-size: clamp(12px, 2vw, 22px);
-    margin-left: 10px; /* 较小屏幕的默认左边距 */
+    font-family: 'Noto Sans SC', sans-serif; /* 字体族设置为Noto Sans SC，备用字体为sans-serif */
+    /* 最小值：18px, 理想值：2vw, 最大值：30px */
+    font-size: clamp(18px, 2vw, 30px); /* 字体大小根据视口宽度动态调整，但不小于18px且不大于30px */
+    margin-left: 4vw; /* 页面左边距设置为视口宽度的4%，以提供动态调整的空白区域 */
 }
 
-/* iPhone垂直方向 */
-@media (max-width: 374px) {
-    body {
-        margin-left: 18px; /* 小屏幕左边距 */
-    }
-}
-
-/* iPhone横向到iPad垂直方向 */
-@media (min-width: 375px) and (max-width: 767px) {
-    body {
-        margin-left: 20px; /* 中等屏幕左边距 */
-    }
-}
-
-/* iPad横向到小型桌面显示器 */
-@media (min-width: 768px) and (max-width: 1279px) {
-    body {
-        margin-left: 25px; /* 较大屏幕左边距 */
-    }
-}
-
-/* 中等桌面显示器 */
-@media (min-width: 1280px) and (max-width: 1439px) {
-    body {
-        margin-left: 30px; /* 大屏幕左边距 */
-    }
-}
-
-/* 大型桌面显示器 */
-@media (min-width: 1440px) {
-    body {
-        margin-left: 30px; /* 非常大屏幕左边距 */
-    }
-}
 header {
     width: 100%; /* 宽度占满整个屏幕 */
     height: 17vh; /* 高度为视口高度的20% */
