@@ -1,7 +1,6 @@
 body {
     font-family: 'Noto Sans SC', sans-serif; /* 字体族设置为Noto Sans SC，备用字体为sans-serif */
     /* 最小值：18px, 理想值：2vw, 最大值：30px */
-    font-size: clamp(3rem, 2.5vw, 5rem); /* 字体大小根据视口宽度动态调整，但不小于18px且不大于30px */
     margin-left: 4vw; /* 页面左边距设置为视口宽度的4%，以提供动态调整的空白区域 */
 }
 
@@ -12,8 +11,15 @@ header {
 }
 
 h1 {
-    font-family: 'Noto Sans SC', sans-serif; /* 继承之前设置的字体 */
-    font-size: clamp(3rem, 2.5vw, 5rem); /* 自适应字体大小 */
+    font-family: 'Noto Serif', serif;
+    font-size: 2rem; /* 示例：设置标题的字体大小 */
+    font-weight: bold; /* 加粗 */
+}
+
+p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem; /* 示例：设置正文的字体大小 */
+    line-height: 1.6; /* 设置行高，提高可读性 */
 }
 
 /* 去掉ul列表前的小圆点 */
