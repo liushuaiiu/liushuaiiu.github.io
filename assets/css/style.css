@@ -38,15 +38,20 @@ p {
 }
 
 .post-link {
-    text-decoration: none; /* 去除链接下划线 */
-    color: #333; /* 设置链接文字颜色 */
-    /* 其他想要的样式 */
+    display: flex; /* 使用flex布局 */
+    justify-content: space-between; /* 两端对齐，项目之间的间隔都相等 */
+    text-decoration: none;
+    color: #333; /* 或其他你喜欢的颜色 */
+    width: 100%; /* 根据需要调整宽度 */
 }
 
-.post-date {
-    margin-left: 10px; /* 在标题和日期之间添加一定的间距 */
-    color: #777; /* 如果需要，为日期设置不同的颜色 */
-    /* 其他想要的样式 */
+.post-title, .post-date {
+    padding: 5px; /* 根据需要调整 */
+}
+
+/* 可选：为链接添加一些样式，比如悬停效果 */
+.post-link:hover {
+    color: #000; /* 鼠标悬停时的颜色变化 */
 }
 
 /* 去掉ul列表前的小圆点 */
