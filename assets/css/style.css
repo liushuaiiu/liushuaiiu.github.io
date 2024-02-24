@@ -1,22 +1,44 @@
 body {
     font-family: 'Noto Sans SC', sans-serif;
-    font-size: 16px; /* 默认字体大小 */
+    /* 最小值：12px, 理想值：2vw, 最大值：18px */
+    font-size: clamp(12px, 2vw, 18px);
     margin-left: 10px; /* 较小屏幕的默认左边距 */
 }
 
-@media (min-width: 768px) {
+/* iPhone垂直方向 */
+@media (max-width: 374px) {
     body {
-        font-size: 1vw; /* 在较大的屏幕上，根据视口宽度调整字体大小 */
+        margin-left: 10px; /* 小屏幕左边距 */
     }
 }
 
-@media (min-width: 1200px) {
+/* iPhone横向到iPad垂直方向 */
+@media (min-width: 375px) and (max-width: 767px) {
     body {
-        font-size: 18px; /* 在非常大的屏幕上设置一个最大字体大小 */
-        margin-left: 20px; /* 在较大屏幕上增加左边距 */
+        margin-left: 15px; /* 中等屏幕左边距 */
     }
 }
 
+/* iPad横向到小型桌面显示器 */
+@media (min-width: 768px) and (max-width: 1279px) {
+    body {
+        margin-left: 20px; /* 较大屏幕左边距 */
+    }
+}
+
+/* 中等桌面显示器 */
+@media (min-width: 1280px) and (max-width: 1439px) {
+    body {
+        margin-left: 25px; /* 大屏幕左边距 */
+    }
+}
+
+/* 大型桌面显示器 */
+@media (min-width: 1440px) {
+    body {
+        margin-left: 30px; /* 非常大屏幕左边距 */
+    }
+}
 header {
     width: 100%; /* 宽度占满整个屏幕 */
     height: 17vh; /* 高度为视口高度的20% */
