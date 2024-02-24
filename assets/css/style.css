@@ -7,7 +7,7 @@ body {
 
 header {
     width: 100%; /* 宽度占满整个屏幕 */
-    height: 17vh; /* 高度为视口高度的20% */
+    height: 14vh; /* 高度为视口高度的14% */
     background-color: transparent; /* 背景透明 */
 }
 
