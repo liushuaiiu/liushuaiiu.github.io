@@ -11,6 +11,12 @@ header {
     background-color: transparent; /* 背景透明 */
 }
 
+h1 {
+    font-family: 'Noto Sans SC', sans-serif; /* 继承之前设置的字体 */
+    font-size: clamp(24px, 2.5vw, 36px); /* 自适应字体大小 */
+    margin-left: 4vw; /* 如果需要，也可以为标题设置左边距 */
+}
+
 /* 去掉ul列表前的小圆点 */
 ul {
     list-style-type: none;
