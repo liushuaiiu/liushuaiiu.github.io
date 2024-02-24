@@ -23,13 +23,18 @@ p {
 }
 
 .back-to-home {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
+    display: inline-block; /* 使链接像块级元素一样显示，但仍然保持行内元素的特性 */
+    color: #333; /* 设置文字颜色为深灰色 */
+    text-decoration: none; /* 去掉下划线 */
+    border-bottom: 2px solid #ccc; /* 在文字下方添加一条灰色的横线 */
+    padding-bottom: 3px; /* 在横线和文字之间添加一点间距 */
+    transition: color 0.3s, border-bottom-color 0.3s; /* 添加颜色变化的过渡效果 */
+}
+
+.back-to-home:hover,
+.back-to-home:focus {
+    color: #555; /* 鼠标悬停或聚焦时文字颜色变深 */
+    border-bottom-color: #888; /* 鼠标悬停或聚焦时横线颜色变深 */
 }
 
 /* 去掉ul列表前的小圆点 */
