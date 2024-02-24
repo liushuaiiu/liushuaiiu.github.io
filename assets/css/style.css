@@ -1,35 +1,35 @@
 body {
     font-family: 'Noto Sans SC', sans-serif;
-    /* 最小值：12px, 理想值：2vw, 最大值：18px */
-    font-size: clamp(12px, 2vw, 18px);
+    /* 最小值：12px, 理想值：2vw, 最大值：22px */
+    font-size: clamp(12px, 2vw, 22px);
     margin-left: 10px; /* 较小屏幕的默认左边距 */
 }
 
 /* iPhone垂直方向 */
 @media (max-width: 374px) {
     body {
-        margin-left: 10px; /* 小屏幕左边距 */
+        margin-left: 18px; /* 小屏幕左边距 */
     }
 }
 
 /* iPhone横向到iPad垂直方向 */
 @media (min-width: 375px) and (max-width: 767px) {
     body {
-        margin-left: 15px; /* 中等屏幕左边距 */
+        margin-left: 20px; /* 中等屏幕左边距 */
     }
 }
 
 /* iPad横向到小型桌面显示器 */
 @media (min-width: 768px) and (max-width: 1279px) {
     body {
-        margin-left: 20px; /* 较大屏幕左边距 */
+        margin-left: 25px; /* 较大屏幕左边距 */
     }
 }
 
 /* 中等桌面显示器 */
 @media (min-width: 1280px) and (max-width: 1439px) {
     body {
-        margin-left: 25px; /* 大屏幕左边距 */
+        margin-left: 30px; /* 大屏幕左边距 */
     }
 }
 
