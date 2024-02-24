@@ -13,7 +13,7 @@ header {
 
 h1 {
     font-family: 'Noto Sans SC', sans-serif; /* 继承之前设置的字体 */
-    font-size: clamp(24px, 2.5vw, 36px); /* 自适应字体大小 */
+    font-size: clamp(40px, 2.5vw, 60px); /* 自适应字体大小 */
 /*     margin-left: 4vw; /* 如果需要，也可以为标题设置左边距 */ */
 }
 
