@@ -19,8 +19,7 @@
           {% for post in site.posts %}
             <li>
                 <a href="{{ post.url }}" class="post-link">
-                    {{ post.title }}
-                    <span class="post-date">{{ post.date | date: "%Y年%m月%d日" }}</span>
+                    {{ post.title }} <span class="post-date">{{ post.date | date: "%Y %m %d " }}</span>
                 </a>
             </li>
           {% endfor %}
