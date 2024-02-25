@@ -38,15 +38,19 @@ p {
 }
 
 .post-link {
-    display: flex; /* 使用flex布局 */
-    justify-content: space-between; /* 两端对齐，项目之间的间隔都相等 */
-    text-decoration: none;
-    color: #333; /* 或其他你喜欢的颜色 */
-    width: 100%; /* 根据需要调整宽度 */
+    display: flex; /* 启用flexbox布局 */
+    justify-content: space-between; /* 在主轴上使用空间均匀分布，但因为日期使用了margin-left:auto，这将导致日期靠右对齐 */
+    width: 100%; /* 根据需要调整链接的宽度 */
+    text-decoration: none; /* 去除下划线 */
 }
 
-.post-title, .post-date {
+.post-title, {
     padding: 5px; /* 根据需要调整 */
+}
+
+.post-date {
+    margin-left: auto; /* 自动外边距推动日期向右对齐 */
+    padding-left: 20px; /* 自定义标题和日期之间的距离 */
 }
 
 /* 可选：为链接添加一些样式，比如悬停效果 */
