@@ -38,15 +38,19 @@ p {
 }
 
 .post-link {
-    display: inline-flex; /* 使用inline-flex确保容器宽度根据内容调整 */
-    align-items: center;
-    text-decoration: none;
-    color: #333; /* 设置文字颜色 */
+    display: flex; /* 使用flex布局 */
+    justify-content: space-between; /* 使用空间在项目之间平均分配 */
+    width: 100%; /* 链接占据全部可用宽度 */
+    text-decoration: none; /* 去除下划线 */
+}
+
+.post-title {
+    /* 标题的样式 */
+    margin-right: auto; /* 确保标题和日期之间的间隔 */
 }
 
 .post-date {
-    margin-left: 20px; /* 控制标题和日期之间的间距 */
-    color: #777; /* 日期的文字颜色 */
+    /* 日期的样式 */
 }
 
 
