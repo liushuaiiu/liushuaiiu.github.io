@@ -49,10 +49,23 @@ p {
     margin-right: auto; /* 确保标题和日期之间的间隔 */
 }
 
-.post-date {
-    /* 日期的样式 */
+.post-container {
+    display: flex;
+    justify-content: space-between; /* 这会在标题和日期之间添加空间，但不会推到最右边 */
+    align-items: center;
+    width: 80%; /* 或者根据您的页面设计调整宽度 */
+    margin: 0 auto; /* 这会使得容器居中显示 */
+    padding: 0 10px; /* 根据需要调整内边距 */
+    box-sizing: border-box; /* 保证内边距不会影响容器的最终宽度 */
 }
 
+.post-title {
+    /* 标题样式，不需要特别调整 */
+}
+
+.post-date {
+    margin-left: 20px; /* 保持与标题固定距离 */
+}
 
 /* 可选：为链接添加一些样式，比如悬停效果 */
 .post-link:hover {
