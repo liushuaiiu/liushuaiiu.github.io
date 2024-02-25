@@ -2,6 +2,7 @@ body {
     font-family: 'Noto Sans SC', sans-serif; /* 字体族设置为Noto Sans SC，备用字体为sans-serif */
     /* 最小值：18px, 理想值：2vw, 最大值：30px */
     margin-left: 4vw; /* 页面左边距设置为视口宽度的4%，以提供动态调整的空白区域 */
+    padding: 0;/* 移除默认的内边距 */
 }
 
 header {
