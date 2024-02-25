@@ -73,6 +73,11 @@ p {
     color: #000; /* 鼠标悬停时的颜色变化 */
 }
 
+table th:first-of-type {
+    width: 20%;
+}
+
+
 /* 去掉ul列表前的小圆点 */
 ul {
     list-style-type: none;
