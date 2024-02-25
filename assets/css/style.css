@@ -38,22 +38,17 @@ p {
 }
 
 .post-link {
-    display: flex;
+    display: inline-flex; /* 使用inline-flex确保容器宽度根据内容调整 */
     align-items: center;
     text-decoration: none;
-}
-
-.post-title, {
-    padding: 5px; /* 根据需要调整 */
+    color: #333; /* 设置文字颜色 */
 }
 
 .post-date {
+    margin-left: 20px; /* 控制标题和日期之间的间距 */
+    color: #777; /* 日期的文字颜色 */
 }
 
-.spacer {
-    flex-grow: 1; /* 使得这个空白填充占据所有可用空间 */
-    margin-left: 20px; /* 或您希望的任何间距，这确保了标题和日期之间的最小间距 */
-}
 
 /* 可选：为链接添加一些样式，比如悬停效果 */
 .post-link:hover {
